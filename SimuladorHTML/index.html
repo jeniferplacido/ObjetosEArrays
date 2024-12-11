@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador de Loja</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link para o arquivo de estilo -->
+</head>
+<body>
+    <h1>Simulador de Loja</h1>
+    <p>Adicione produtos e veja a lista atualizada com preços e status.</p>
+
+    <!-- Formulário para adicionar produtos -->
+    <form id="form-produto">
+        <label for="nome">Nome do Produto:</label>
+        <input type="text" id="nome" name="nome" required>
+        <label for="preco">Preço:</label>
+        <input type="number" id="preco" name="preco" step="0.01" required>
+        <button type="submit">Adicionar Produto</button>
+    </form>
+
+    <!-- Div onde os produtos serão exibidos -->
+    <div id="produtos-lista"></div>
+
+    <script src="produto.js"></script> <!-- Link para o arquivo de script -->
+</body>
+</html>
